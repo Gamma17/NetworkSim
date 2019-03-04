@@ -6,17 +6,17 @@ import org.scalatest.FunSuite
 class VersionTest extends FunSuite {
 
   test("Supported values accepted") {
-    assert(Version(4).version == 4)
+    assert(Version(Version.Ipv4).value == 4)
   }
 
-  test("Illegal values rejected") {
+  test("Illegal values throw IllegalArgumentException") {
     val thrown = intercept[IllegalArgumentException] {
       Version((scala.math.pow(2, 4) - 1).intValue + 1)
     }
     assert(thrown.getMessage.contains("Illegal value"))
   }
 
-  test("Unsupported values rejected") {
+  test("Unsupported values throw NotImplementedError") {
     val thrown = intercept[NotImplementedError] {
       Version(6)
     }

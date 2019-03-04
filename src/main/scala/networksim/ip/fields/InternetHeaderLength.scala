@@ -1,4 +1,4 @@
-package networksim.fields
+package networksim.ip.fields
 
 object InternetHeaderLength extends Field("IHL", 5, Field.max(4), Some(Array(5)))
 

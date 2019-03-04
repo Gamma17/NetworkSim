@@ -1,4 +1,4 @@
-package networksim.fields
+package networksim.ip.fields
 
 object DifferentiatedServicesCodePoint extends Field("DSCP", 0, Field.max(6), Some(Array(0)))
 

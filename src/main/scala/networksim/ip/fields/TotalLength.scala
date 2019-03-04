@@ -1,4 +1,4 @@
-package networksim.fields
+package networksim.ip.fields
 
 object TotalLength extends Field("Total Length", 20, Field.max(16))
 

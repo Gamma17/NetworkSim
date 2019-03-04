@@ -1,6 +1,6 @@
 package networksim
 
-class IpPacket {
+case class IpPacket() {
 
   override def toString = "I am an IP packet"
 

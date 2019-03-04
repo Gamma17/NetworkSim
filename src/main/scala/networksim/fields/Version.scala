@@ -1,16 +1,12 @@
 package networksim.fields
 
-object Version {
-  val Name = "Version"
-  val Min = 0
-  val Max: Int = (scala.math.pow(2, 4) - 1).intValue
+object Version extends Field("Version", 0, (scala.math.pow(2, 4) - 1).intValue, Array(4)) {
   val Ipv4 = 4
-  val supportedValues = Array(Ipv4)
 }
 
-class Version(value: Int = 4) {
+case class Version(version: Int = 4) {
 
   import Version._
 
-  FieldValidator.validate(Name, Min, Max, supportedValues, value)
+  validate(version)
 }

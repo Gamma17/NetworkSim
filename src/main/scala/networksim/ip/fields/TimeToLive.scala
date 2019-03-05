@@ -1,9 +1,7 @@
 package networksim.ip.fields
 
-object Protocol extends Field("Protocol", 0, Field.max(8), Some(Array(6))) {
-  val TCP = 6
-}
+object TimeToLive extends Field("TTL", 0, Field.max(8))
 
-case class Protocol(value: Int = 6) {
-  Version.validate(value)
+case class TimeToLive(value: Int = 255) {
+  TimeToLive.validate(value)
 }

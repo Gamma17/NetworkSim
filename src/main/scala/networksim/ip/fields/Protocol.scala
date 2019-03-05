@@ -5,5 +5,5 @@ object Protocol extends Field("Protocol", 0, Field.max(8), Some(Array(6))) {
 }
 
 case class Protocol(value: Int = 6) {
-  Version.validate(value)
+  Protocol.validate(value)
 }

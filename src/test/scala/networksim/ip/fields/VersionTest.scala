@@ -6,7 +6,7 @@ import org.scalatest.FunSuite
 class VersionTest extends FunSuite {
 
   test("Supported values accepted") {
-    assert(Version(Version.Ipv4).value == 4)
+    assert(Version(Version.IPv4).value == 4)
   }
 
   test("Illegal values throw IllegalArgumentException") {

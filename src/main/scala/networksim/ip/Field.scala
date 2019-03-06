@@ -1,4 +1,4 @@
-package networksim.ip.fields
+package networksim.ip
 
 object Field {
   def max(numberOfBits: Int) = (scala.math.pow(numberOfBits, 2) - 1).intValue

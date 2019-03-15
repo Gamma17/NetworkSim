@@ -1,6 +1,6 @@
-package networksim.ip.fields
+package com.gamma17.networksim.ip.fields
 
-import networksim.ip.Field
+import com.gamma17.networksim.ip.Field
 
 object InternetHeaderLength extends Field("IHL", 5, Field.max(4), Some(Array(5)))
 

@@ -1,4 +1,4 @@
-package networksim.ip.fields
+package com.gamma17.networksim.ip.fields
 
 import org.scalatest.FunSuite
 

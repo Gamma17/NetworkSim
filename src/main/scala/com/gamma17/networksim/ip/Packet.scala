@@ -1,4 +1,4 @@
-package networksim.ip
+package com.gamma17.networksim.ip
 
 case class Packet() {
 

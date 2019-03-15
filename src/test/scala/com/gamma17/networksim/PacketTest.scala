@@ -1,6 +1,6 @@
-package networksim
+package com.gamma17.networksim
 
-import networksim.ip.Packet
+import com.gamma17.networksim.ip.Packet
 import org.scalatest.FunSuite
 
 class PacketTest extends FunSuite {

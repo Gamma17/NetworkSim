@@ -1,6 +1,6 @@
-package networksim.ip.fields
+package com.gamma17.networksim.ip.fields
 
-import networksim.ip.Field
+import com.gamma17.networksim.ip.Field
 
 object Protocol extends Field("Protocol", 0, Field.max(8), Some(Array(6))) {
   val TCP = 6

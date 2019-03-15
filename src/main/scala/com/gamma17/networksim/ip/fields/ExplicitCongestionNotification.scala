@@ -1,6 +1,6 @@
-package networksim.ip.fields
+package com.gamma17.networksim.ip.fields
 
-import networksim.ip.Field
+import com.gamma17.networksim.ip.Field
 
 object ExplicitCongestionNotification extends Field("ECN", 0, Field.max(2), Some(Array(0)))
 

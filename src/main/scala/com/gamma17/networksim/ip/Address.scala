@@ -1,4 +1,4 @@
-package networksim.ip
+package com.gamma17.networksim.ip
 
 object Address {
   val PowersOf256 = Array(16777216L, 65536L, 256L, 1L)

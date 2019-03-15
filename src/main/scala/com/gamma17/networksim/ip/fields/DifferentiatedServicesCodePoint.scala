@@ -1,6 +1,6 @@
-package networksim.ip.fields
+package com.gamma17.networksim.ip.fields
 
-import networksim.ip.Field
+import com.gamma17.networksim.ip.Field
 
 object DifferentiatedServicesCodePoint extends Field("DSCP", 0, Field.max(6), Some(Array(0)))
 
